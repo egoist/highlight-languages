@@ -1,0 +1,32 @@
+{
+  "name": "highlight-languages",
+  "version": "0.0.0",
+  "description": "highlight.js language independent builds",
+  "license": "MIT",
+  "repository": "egoist/highlight-languages",
+  "author": {
+    "name": "EGOIST",
+    "email": "0x142857@gmail.com",
+    "url": "github.com/egoist"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "npm run build",
+    "build": "node build/build.js"
+  },
+  "files": [
+    "*.js"
+  ],
+  "keywords": [
+    "highlight"
+  ],
+  "devDependencies": {
+    "highlight.js": "^9.8.0",
+    "rollup": "^0.36.4",
+    "rollup-plugin-commonjs": "^5.0.5",
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup-plugin-uglify": "^1.0.1"
+  }
+}
