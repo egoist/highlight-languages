@@ -8,7 +8,7 @@ langs.forEach(lang => {
   const languageName = path.basename(lang, '.js')
   const data = `
 import language from 'highlight.js/lib/languages/${lang}'
-hljs.register('${languageName}', language)`.trim()
+hljs.registerLanguage('${languageName}', language)`.trim()
   fs.writeFileSync(`./src/${lang}`, data, 'utf8')
 })
 
